@@ -5,19 +5,29 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ThemingDemoApp"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="400">
+        Title="MainWindow"
+        Height="450"
+        Width="400">
     <StackPanel>
         <Button x:Name="btnLightTheme"
                 Content="Light Theme"
-                Click="btnLightTheme_Click"/>
+                Click="btnLightTheme_Click"
+                Height="50"/>
+        
         <Button x:Name="btnDarkTheme"
                 Content="Dark Theme"
-                Click="btnDarkTheme_Click"/>
+                Click="btnDarkTheme_Click"
+                Height="50"/>
 
-        <Label Content="A Label" />
-        
-        <Expander Header="An Exander" />
+        <Label Content="A Label"
+               Background="{DynamicResource MahApps.Colors.Highlight}"
+               Height="50"/>
 
-        <GroupBox Header="A Group Box" />
+        <GroupBox Header="A Group Box"
+                  Background="{DynamicResource ThemeGenerator.Colors.Highlight}"
+                  Height="50"/>
+
+        <Expander Header="An Exander"
+                  Height="50"/>
     </StackPanel>
 </Window>
