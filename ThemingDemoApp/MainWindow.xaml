@@ -7,8 +7,8 @@
         mc:Ignorable="d"
         Title="MainWindow"
         Height="450"
-        Width="400"
-        Background="{DynamicResource WhiteBrush20}">
+        Width="400">
+    <!-- Add this and changing themes works: Background="{DynamicResource WhiteBrush20}" -->
     <StackPanel>
         <Button x:Name="btnLightTheme"
                 Content="Light Theme"
