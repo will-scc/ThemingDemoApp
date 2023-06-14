@@ -18,7 +18,7 @@
 
     <!-- COLORS -->
     <!-- Accent colors -->
-    <Color x:Key="Colors.AccentBaseColor">#033596</Color>
+    <Color x:Key="Colors.AccentBaseColor">#1E4697</Color>
     <!--80%-->
     <Color x:Key="Colors.AccentColor80">#1E4697</Color>
     <!--60%-->

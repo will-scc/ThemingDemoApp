@@ -20,6 +20,10 @@ namespace ThemingDemoApp
         {
             base.OnStartup(e);
 
+            FrameworkElement.StyleProperty.OverrideMetadata(typeof(MainWindow), new FrameworkPropertyMetadata
+            {
+                DefaultValue = Current.FindResource(typeof(Window))
+            });
 
             LibraryTheme light = new(new Uri("pack://application:,,,/ThemingDemoApp;component/Resources/LightTheme.xaml"),
                                      ThemeProvider.DefaultInstance);
