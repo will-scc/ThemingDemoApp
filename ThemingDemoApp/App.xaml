@@ -4,6 +4,14 @@
              xmlns:local="clr-namespace:ThemingDemoApp"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-         
+
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="/Resources/Controls.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+
+            <local:ThemeProvider x:Key="{x:Static local:ThemeProvider.DefaultInstance}" />
+
+        </ResourceDictionary>
     </Application.Resources>
 </Application>

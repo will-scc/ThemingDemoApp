@@ -16,14 +16,14 @@ namespace ThemingDemoApp
 
         private void btnLightTheme_Click(object sender, RoutedEventArgs e)
         {
-            ThemeManager.Current.ChangeTheme(this, "Light.Blue");
-            Debug.WriteLine("Changed to Light.Blue");
+            ThemeManager.Current.ChangeTheme(this, "Light");
+            Debug.WriteLine("Changed to Light");
         }
         
         private void btnDarkTheme_Click(object sender, RoutedEventArgs e)
         {
-            ThemeManager.Current.ChangeTheme(this, "Dark.Blue");
-            Debug.WriteLine("Changed to Dark.Blue");
+            ThemeManager.Current.ChangeTheme(this, "Dark");
+            Debug.WriteLine("Changed to Dark");
         }
     }
 }

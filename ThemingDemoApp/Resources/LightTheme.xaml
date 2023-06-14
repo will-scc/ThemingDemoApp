@@ -1,0 +1,171 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:options="http://schemas.microsoft.com/winfx/2006/xaml/presentation/options"
+                    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+                    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+                    xmlns:system="clr-namespace:System;assembly=mscorlib"
+                    mc:Ignorable="d">
+
+    <!-- Metadata -->
+    <system:String x:Key="Theme.Name">Light</system:String>
+    <system:String x:Key="Theme.Origin">ThemingDemoApp</system:String>
+    <system:String x:Key="Theme.DisplayName">Light</system:String>
+    <system:String x:Key="Theme.BaseColorScheme">Light</system:String>
+    <system:String x:Key="Theme.ColorScheme">Blue</system:String>
+    <Color x:Key="Theme.PrimaryAccentColor">#033596</Color>
+
+    <system:Boolean x:Key="Theme.IsHighContrast">False</system:Boolean>
+
+    <!-- COLORS -->
+    <!-- Accent colors -->
+    <Color x:Key="Colors.AccentBaseColor">#033596</Color>
+    <!--80%-->
+    <Color x:Key="Colors.AccentColor80">#1E4697</Color>
+    <!--60%-->
+    <Color x:Key="Colors.AccentColor60">#3C5B97</Color>
+    <!--40%-->
+    <Color x:Key="Colors.AccentColor40">#5B6F97</Color>
+    <!--20%-->
+    <Color x:Key="Colors.AccentColor20">#798397</Color>
+
+    <Color x:Key="Colors.HighlightColor">#95caea</Color>
+
+    <!-- Base colors -->
+    <Color x:Key="BlackColor">#000000</Color>
+    <Color x:Key="BlackColor20">#333333</Color>
+    <Color x:Key="WhiteColor">#FFFFFF</Color>
+    <Color x:Key="WhiteColor20">#CDCDCD</Color>
+    <Color x:Key="Gray1">#545557</Color>
+    <Color x:Key="Gray2">#797B7D</Color>
+    <Color x:Key="Gray3">#9EA1A3</Color>
+    <Color x:Key="Gray4">#DCE0E3</Color>
+    <Color x:Key="Gray5">#E3E3E3</Color>
+    <Color x:Key="Gray6">#969592</Color>
+    <Color x:Key="Gray7">#40454A</Color>
+    <Color x:Key="Gray8">#4A4439</Color>
+    <Color x:Key="Gray9">#545557</Color>
+    <Color x:Key="Gray10">#545557</Color>
+
+    <Color x:Key="TransparentWhiteColor">#00FFFFFF</Color>
+    <Color x:Key="Colors.HighTransparentWhiteColor">#17FFFFFF</Color>
+
+    <!-- Foreground -->
+    <Color x:Key="Colors.IdealForegroundColor">#000000</Color>
+    <Color x:Key="Colors.DarkIdealForegroundDisabledColor">#333333</Color>
+
+    <!-- Misc colors -->
+    <Color x:Key="Colors.ExtremeHighlightColor">#ecc276</Color>
+    <Color x:Key="Colors.DarkExtremeHighlightColor">#f77462</Color>
+
+    <!-- END COLORS -->
+
+    <!-- BRUSHES -->
+    <SolidColorBrush x:Key="Theme.ShowcaseBrush"
+                     Color="{StaticResource Theme.PrimaryAccentColor}"
+                     options:Freeze="True" />
+
+    <!-- Accent brushes -->
+    <SolidColorBrush x:Key="Brushes.AccentBaseColorBrush"
+                     Color="{StaticResource Colors.AccentBaseColor}"
+                     options:Freeze="True" />
+    <SolidColorBrush x:Key="Brushes.AccentColorBrush80"
+                     Color="{StaticResource Colors.AccentColor80}"
+                     options:Freeze="True" />
+    <SolidColorBrush x:Key="Brushes.AccentColorBrush60"
+                     Color="{StaticResource Colors.AccentColor60}"
+                     options:Freeze="True" />
+    <SolidColorBrush x:Key="Brushes.AccentColorBrush40"
+                     Color="{StaticResource Colors.AccentColor40}"
+                     options:Freeze="True" />
+    <SolidColorBrush x:Key="Brushes.AccentColorBrush20"
+                     Color="{StaticResource Colors.AccentColor20}"
+                     options:Freeze="True" />
+
+    <SolidColorBrush x:Key="Brushes.HighlightBrush"
+                     Color="{StaticResource Colors.HighlightColor}"
+                     options:Freeze="True" />
+
+    <!-- Misc brushes -->
+    <SolidColorBrush x:Key="Brushes.ExtremeHighlightBrush"
+                     Color="{StaticResource Colors.ExtremeHighlightColor}"
+                     options:Freeze="True" />
+    <SolidColorBrush x:Key="Brushes.DarkExtremeHighlightBrush"
+                     Color="{StaticResource Colors.DarkExtremeHighlightColor}"
+                     options:Freeze="True" />
+
+    <!-- Base brushes -->
+    <SolidColorBrush x:Key="WhiteBrush"
+                     Color="{StaticResource WhiteColor}"
+                     options:Freeze="True" />
+    <SolidColorBrush x:Key="WhiteBrush20"
+                     Color="{StaticResource WhiteColor20}"
+                     options:Freeze="True" />
+    <SolidColorBrush x:Key="BlackBrush"
+                     Color="{StaticResource BlackColor}"
+                     options:Freeze="True" />
+    <SolidColorBrush x:Key="BlackBrush20"
+                     Color="{StaticResource BlackColor20}"
+                     options:Freeze="True" />
+    <SolidColorBrush x:Key="GrayBrush1"
+                     Color="{StaticResource Gray1}"
+                     options:Freeze="True" />
+    <SolidColorBrush x:Key="GrayBrush2"
+                     Color="{StaticResource Gray2}"
+                     options:Freeze="True" />
+    <SolidColorBrush x:Key="GrayBrush3"
+                     Color="{StaticResource Gray3}"
+                     options:Freeze="True" />
+    <SolidColorBrush x:Key="GrayBrush4"
+                     Color="{StaticResource Gray4}"
+                     options:Freeze="True" />
+    <SolidColorBrush x:Key="GrayBrush5"
+                     Color="{StaticResource Gray5}"
+                     options:Freeze="True" />
+    <SolidColorBrush x:Key="GrayBrush6"
+                     Color="{StaticResource Gray6}"
+                     options:Freeze="True" />
+    <SolidColorBrush x:Key="GrayBrush7"
+                     Color="{StaticResource Gray7}"
+                     options:Freeze="True" />
+    <SolidColorBrush x:Key="GrayBrush8"
+                     Color="{StaticResource Gray8}"
+                     options:Freeze="True" />
+    <SolidColorBrush x:Key="GrayBrush9"
+                     Color="{StaticResource Gray9}"
+                     options:Freeze="True" />
+    <SolidColorBrush x:Key="GrayBrush10"
+                     Color="{StaticResource Gray10}"
+                     options:Freeze="True" />
+
+    <SolidColorBrush x:Key="TransparentWhiteBrush"
+                     Color="{StaticResource TransparentWhiteColor}"
+                     options:Freeze="True" />
+    <SolidColorBrush x:Key="HighTransparentWhiteBrush"
+                     Color="{StaticResource Colors.HighTransparentWhiteColor}"
+                     options:Freeze="True" />
+
+    <!-- Foreground -->
+    <SolidColorBrush x:Key="Brushes.IdealForegroundColorBrush"
+                     Color="{StaticResource Colors.IdealForegroundColor}"
+                     options:Freeze="True" />
+    <SolidColorBrush x:Key="Brushes.IdealForegroundDisabledBrush"
+                     Color="{StaticResource Colors.IdealForegroundColor}"
+                     Opacity="0.4"
+                     options:Freeze="True" />
+    <SolidColorBrush x:Key="Brushes.DarkIdealForegroundDisabledBrush"
+                     Color="{StaticResource Colors.DarkIdealForegroundDisabledColor}"
+                     options:Freeze="True" />
+    <SolidColorBrush x:Key="Brushes.LabelTextBrush"
+                     Color="{StaticResource Colors.IdealForegroundColor}"
+                     options:Freeze="True" />
+
+    <!-- Generic control brushes -->
+    <SolidColorBrush x:Key="Brushes.Control.BorderBrush"
+                     Color="{StaticResource Gray6}"
+                     options:Freeze="True" />
+    <SolidColorBrush x:Key="Brushes.Control.Disabled.BorderBrush"
+                     Color="{StaticResource Gray5}"
+                     options:Freeze="True" />
+
+    <!-- END BRUSHES -->
+</ResourceDictionary>

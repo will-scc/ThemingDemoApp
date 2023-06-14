@@ -20,31 +20,17 @@ namespace ThemingDemoApp
         {
             base.OnStartup(e);
 
-            SolidColorBrush blueBrush = new(Colors.Blue);
 
-            Theme light = new("Light.Blue",
-                              "Light Blue",
-                              ThemeManager.BaseColorLight,
-                              "Blue",
-                              Colors.Blue,
-                              blueBrush,
-                              true,
-                              false);
+            LibraryTheme light = new(new Uri("pack://application:,,,/ThemingDemoApp;component/Resources/LightTheme.xaml"),
+                                     ThemeProvider.DefaultInstance);
 
-            ThemeManager.Current.AddTheme(light);
+            LibraryTheme dark = new(new Uri("pack://application:,,,/ThemingDemoApp;component/Resources/DarkTheme.xaml"),
+                                    ThemeProvider.DefaultInstance);
 
-            Theme dark = new("Dark.Blue",
-                             "Dark Blue",
-                             ThemeManager.BaseColorDark,
-                             "Blue",
-                             Colors.Blue,
-                             blueBrush,
-                             true,
-                             false);
+            ThemeManager.Current.AddLibraryTheme(light);
+            ThemeManager.Current.AddLibraryTheme(dark);
 
-            ThemeManager.Current.AddTheme(dark);
-
-            ThemeManager.Current.ChangeTheme(this, "Light.Blue");
+            ThemeManager.Current.ChangeTheme(this, "Light");
         }
     }
 }

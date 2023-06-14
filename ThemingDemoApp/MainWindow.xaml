@@ -7,7 +7,8 @@
         mc:Ignorable="d"
         Title="MainWindow"
         Height="450"
-        Width="400">
+        Width="400"
+        Background="{DynamicResource WhiteBrush20}">
     <StackPanel>
         <Button x:Name="btnLightTheme"
                 Content="Light Theme"
@@ -27,7 +28,7 @@
                   Background="{DynamicResource ThemeGenerator.Colors.Highlight}"
                   Height="50"/>
 
-        <Expander Header="An Exander"
+        <Expander Header="An Expander"
                   Height="50"/>
     </StackPanel>
 </Window>
