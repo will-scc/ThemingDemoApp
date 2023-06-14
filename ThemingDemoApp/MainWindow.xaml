@@ -21,11 +21,9 @@
                 Height="50"/>
 
         <Label Content="A Label"
-               Background="{DynamicResource MahApps.Colors.Highlight}"
                Height="50"/>
 
         <GroupBox Header="A Group Box"
-                  Background="{DynamicResource ThemeGenerator.Colors.Highlight}"
                   Height="50"/>
 
         <Expander Header="An Expander"
